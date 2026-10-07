@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SAVER Verifier — source-backed factual claim verification for autonomous AI agents." />
+  <meta name="theme-color" content="#111315" />
+  <meta property="og:title" content="SAVER Verifier — Verify before the agent acts." />
+  <meta property="og:description" content="Source-backed factual claim verification for autonomous AI agents, paid natively with x402 on Base." />
+  <meta property="og:type" content="website" />
+  <title>SAVER Verifier — Verify before the agent acts.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow-a"></div>
+  <div class="page-glow page-glow-b"></div>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="SAVER Verifier home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" role="img">
+            <path d="M21 3.5 35 9.2v10.2c0 9.6-5.3 15.5-14 19.1-8.7-3.6-14-9.5-14-19.1V9.2L21 3.5Z" />
+            <path d="m14.2 21.2 4.3 4.3 9.6-10.1" />
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>SAVER</strong>
+          <span>Verifier</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#why">Why SAVER</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#security">Security</a>
+        <a href="#integrate">Integrate</a>
+      </nav>
+
+      <a class="button button-ghost nav-cta" href="https://github.com/SAVER-SI/saver-verifier" target="_blank" rel="noreferrer">
+        GitHub
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          Live on Base Mainnet
+          <span class="eyebrow-separator">•</span>
+          x402 v2
+        </div>
+
+        <h1>
+          Verify before<br />
+          <span class="gradient-text">the agent acts.</span>
+        </h1>
+
+        <p class="hero-lede">
+          Source-backed factual claim verification for autonomous AI agents.
+          Give software an independent evidence check before it pays, commits,
+          or makes a consequential decision.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#integrate">
+            Integrate SAVER
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="button button-secondary" href="https://agent-production-9804.up.railway.app/.well-known/x402" target="_blank" rel="noreferrer">
+            Inspect x402 discovery
+          </a>
+        </div>
+
+        <div class="hero-micro">
+          <span>No API key</span>
+          <span>0.20 USDC / verification</span>
+          <span>Machine-native discovery</span>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal reveal-delay">
+        <div class="terminal-card">
+          <div class="terminal-top">
+            <div class="terminal-dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-label">agent → SAVER</div>
+            <div class="terminal-status">LIVE</div>
+          </div>
+
+          <div class="terminal-flow">
+            <div class="flow-row">
+              <div class="flow-index">01</div>
+              <div class="flow-main">
+                <span class="flow-label">claim</span>
+                <code>"The Ethereum mainnet launched on July 30, 2015."</code>
+              </div>
+            </div>
+
+            <div class="flow-connector"></div>
+
+            <div class="flow-row">
+              <div class="flow-index">02</div>
+              <div class="flow-main">
+                <span class="flow-label">verify</span>
+                <div class="verify-chip">x402 · 0.20 USDC · Base</div>
+              </div>
+            </div>
+
+            <div class="flow-connector"></div>
+
+            <div class="flow-row result-row">
+              <div class="flow-index">03</div>
+              <div class="flow-main">
+                <span class="flow-label">result</span>
+                <div class="result-grid">
+                  <div>
+                    <span>Status</span>
+                    <strong class="positive">supported</strong>
+                  </div>
+                  <div>
+                    <span>Confidence</span>
+                    <strong>0.98</strong>
+                  </div>
+                  <div>
+                    <span>Evidence</span>
+                    <strong>source-backed</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="terminal-footer">
+            <span>evidence</span>
+            <span>sources</span>
+            <span>confidence</span>
+            <span>explanation</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-a">
+          <span class="badge-icon">✓</span>
+          <div>
+            <strong>Security audit</strong>
+            <span>Pass · v1.0.2</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-b">
+          <span class="badge-icon">◇</span>
+          <div>
+            <strong>OpenAPI + x402</strong>
+            <span>Machine discoverable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip">
+      <div class="shell proof-grid">
+        <div class="proof-item">
+          <span class="proof-kicker">Protocol</span>
+          <strong>x402 v2</strong>
+        </div>
+        <div class="proof-item">
+          <span class="proof-kicker">Network</span>
+          <strong>Base Mainnet</strong>
+        </div>
+        <div class="proof-item">
+          <span class="proof-kicker">Settlement</span>
+          <strong>USDC</strong>
+        </div>
+        <div class="proof-item">
+          <span class="proof-kicker">Price</span>
+          <strong>0.20 USDC</strong>
+        </div>
+        <div class="proof-item">
+          <span class="proof-kicker">Audit</span>
+          <strong>Pass</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="why">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Why SAVER</span>
+        <h2>Agents can pay autonomously.<br />They still need to know what to trust.</h2>
+        <p>
+          SAVER adds an independent verification layer between information and execution.
+          It does not replace wallet policy, transaction simulation, or deterministic security controls.
+          It answers a different question: <em>is the factual premise supported by current evidence?</em>
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon">01</div>
+          <h3>Independent second opinion</h3>
+          <p>
+            Verify a claim produced by another model, tool, API, or agent before relying on it.
+          </p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">02</div>
+          <h3>Source-backed evidence</h3>
+          <p>
+            Receive structured output with evidence, cited sources, confidence, and explanation.
+          </p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">03</div>
+          <h3>Native agent payments</h3>
+          <p>
+            Protected by x402 on Base Mainnet. No API key or manual billing integration required.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="workflow">
+      <div class="shell">
+        <div class="section-heading compact reveal">
+          <span class="section-kicker">The trust gate</span>
+          <h2>A minimal primitive for consequential workflows.</h2>
+        </div>
+
+        <div class="workflow reveal">
+          <div class="workflow-step">
+            <span>01</span>
+            <strong>Discover</strong>
+            <p>Read SAVER's x402 and OpenAPI metadata.</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>02</span>
+            <strong>Verify</strong>
+            <p>Submit the factual premise that matters.</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>03</span>
+            <strong>Decide</strong>
+            <p>Evaluate evidence, sources, and confidence.</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step emphasis">
+            <span>04</span>
+            <strong>Pay / Act</strong>
+            <p>Continue only if your own policy allows it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell code-section" id="integrate">
+      <div class="code-copy reveal">
+        <span class="section-kicker">Integrate</span>
+        <h2>One endpoint.<br />Built for software, not forms.</h2>
+        <p>
+          Send a claim to <code>POST /verify</code>. An unpaid request returns
+          HTTP 402 with payment requirements. A compatible x402 client authorizes
+          payment and retries.
+        </p>
+
+        <div class="link-stack">
+          <a href="https://agent-production-9804.up.railway.app/openapi.json" target="_blank" rel="noreferrer">
+            <span>OpenAPI specification</span>
+            <span>↗</span>
+          </a>
+          <a href="https://agent-production-9804.up.railway.app/.well-known/x402" target="_blank" rel="noreferrer">
+            <span>x402 discovery</span>
+            <span>↗</span>
+          </a>
+          <a href="https://clawhub.ai/saver-si/skills/saver-verifier" target="_blank" rel="noreferrer">
+            <span>OpenClaw skill on ClawHub</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="code-card reveal reveal-delay">
+        <div class="code-tabs">
+          <button class="code-tab active" data-tab="request">Request</button>
+          <button class="code-tab" data-tab="response">Response</button>
+          <button class="copy-button" type="button" aria-label="Copy code">Copy</button>
+        </div>
+
+        <pre class="code-pane active" data-pane="request"><code>POST /verify
+Content-Type: application/json
+
+{
+  "claim": "The Ethereum mainnet launched
+            on July 30, 2015.",
+  "context": "Example verification request"
+}</code></pre>
+
+        <pre class="code-pane" data-pane="response"><code>{
+  "status": "supported",
+  "confidence": 0.98,
+  "evidence": [...],
+  "sources": [...],
+  "explanation": "...",
+  "timestamp": "..."
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="section security-section" id="security">
+      <div class="shell security-grid">
+        <div class="security-copy reveal">
+          <span class="section-kicker">Security by design</span>
+          <h2>Verification is evidence.<br />Not permission.</h2>
+          <p>
+            SAVER is designed to complement — not bypass — wallet policy,
+            approvals, transaction simulation, sanctions checks, or deterministic controls.
+          </p>
+
+          <a class="text-link" href="https://github.com/SAVER-SI/saver-verifier/blob/main/SECURITY.md" target="_blank" rel="noreferrer">
+            Read the security policy <span>↗</span>
+          </a>
+        </div>
+
+        <div class="security-card reveal">
+          <div class="audit-row">
+            <span class="audit-mark">✓</span>
+            <div>
+              <span class="audit-label">ClawHub security audit</span>
+              <strong>Pass</strong>
+            </div>
+            <span class="audit-version">v1.0.2</span>
+          </div>
+
+          <div class="security-points">
+            <div>
+              <span>01</span>
+              <p>Require explicit approval per charge or enforce bounded spending policy.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <p>Use SAVER as an evidence signal inside your existing execution policy.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <p>Never expose wallet private keys, API secrets, or deployment credentials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell ecosystem-section">
+      <div class="section-heading compact reveal">
+        <span class="section-kicker">Agent-native discovery</span>
+        <h2>Designed to be found by machines.</h2>
+      </div>
+
+      <div class="ecosystem-grid">
+        <a class="ecosystem-card reveal" href="https://agent-production-9804.up.railway.app/.well-known/x402" target="_blank" rel="noreferrer">
+          <span class="ecosystem-tag">Discovery</span>
+          <strong>x402 well-known</strong>
+          <p>Price, network, scheme, resource metadata, and service ownership.</p>
+          <span class="ecosystem-arrow">↗</span>
+        </a>
+
+        <a class="ecosystem-card reveal" href="https://agent-production-9804.up.railway.app/openapi.json" target="_blank" rel="noreferrer">
+          <span class="ecosystem-tag">Contract</span>
+          <strong>OpenAPI 3.1</strong>
+          <p>Machine-readable request and response contract for <code>POST /verify</code>.</p>
+          <span class="ecosystem-arrow">↗</span>
+        </a>
+
+        <a class="ecosystem-card reveal" href="https://clawhub.ai/saver-si/skills/saver-verifier" target="_blank" rel="noreferrer">
+          <span class="ecosystem-tag">Skill</span>
+          <strong>OpenClaw / ClawHub</strong>
+          <p>Agent-native usage guidance, security controls, and integration behavior.</p>
+          <span class="ecosystem-arrow">↗</span>
+        </a>
+
+        <a class="ecosystem-card reveal" href="https://www.x402scan.com/server/ec61b7ea-e709-42eb-895e-1a3e9d0f61da" target="_blank" rel="noreferrer">
+          <span class="ecosystem-tag">Visibility</span>
+          <strong>x402scan</strong>
+          <p>Public ecosystem visibility for the live x402 service.</p>
+          <span class="ecosystem-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="shell cta-inner reveal">
+        <div>
+          <span class="section-kicker">For autonomous systems</span>
+          <h2>Give your agent a reason<br />to trust before it acts.</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary button-large" href="https://github.com/SAVER-SI/saver-verifier" target="_blank" rel="noreferrer">
+            View integration docs
+            <span>↗</span>
+          </a>
+          <span class="cta-note">0.20 USDC · Base Mainnet · x402</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 42 42">
+              <path d="M21 3.5 35 9.2v10.2c0 9.6-5.3 15.5-14 19.1-8.7-3.6-14-9.5-14-19.1V9.2L21 3.5Z" />
+              <path d="m14.2 21.2 4.3 4.3 9.6-10.1" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>SAVER</strong>
+            <span>Verifier</span>
+          </span>
+        </a>
+        <p>Trust infrastructure for autonomous AI agents.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/SAVER-SI/saver-verifier" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://clawhub.ai/saver-si/skills/saver-verifier" target="_blank" rel="noreferrer">ClawHub</a>
+        <a href="https://agent-production-9804.up.railway.app/openapi.json" target="_blank" rel="noreferrer">OpenAPI</a>
+        <a href="https://agent-production-9804.up.railway.app/.well-known/x402" target="_blank" rel="noreferrer">x402</a>
+      </div>
+
+      <div class="footer-meta">
+        <span>Base Mainnet</span>
+        <span>USDC</span>
+        <span>x402 v2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
