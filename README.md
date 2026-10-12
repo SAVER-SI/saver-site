@@ -44,7 +44,8 @@ The page reflects the current SAVER service positioning:
 - Base Mainnet
 - USDC
 - 0.20 USDC per verification
-- ClawHub skill v1.0.2
-- current ClawHub security audit: Pass
+- ClawHub skill v1.0.3
+- latest explicitly documented ClawHub security audit: v1.0.2 — Pass
 
-Before production launch, replace or add the final public domain in the HTML metadata if you acquire one.
+Production website: https://saververify.com
+
