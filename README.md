@@ -45,7 +45,7 @@ The page reflects the current SAVER service positioning:
 - USDC
 - 0.20 USDC per verification
 - ClawHub skill v1.0.3
-- latest explicitly documented ClawHub skill audit: v1.0.2 — Pass
+- current ClawHub skill audit: v1.0.3 — Pass
 
 Production website: https://saververify.com
 
