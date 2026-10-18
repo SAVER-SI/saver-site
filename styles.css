@@ -1091,7 +1091,7 @@ button, input, textarea, select { font: inherit; }
 .reveal { opacity: 1; transform: none; }
 .agent-note { color: var(--muted); max-width: 78ch; margin-top: 24px; line-height: 1.75; }
 .example-list { display: grid; gap: 24px; margin-top: 36px; }
-.example-card { border: 1px solid var(--line); border-radius: 18px; padding: 24px; background: var(--surface); }
+.example-card { min-width: 0; border: 1px solid var(--line); border-radius: 18px; padding: 24px; background: var(--surface); }
 .example-card pre { overflow: auto; max-height: 560px; padding: 18px; background: #080b10; border-radius: 12px; font-size: 12px; }
 .example-card a { color: var(--accent); text-decoration: underline; overflow-wrap: anywhere; }
 .example-card h2 { font-size: 24px; }
