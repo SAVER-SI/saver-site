@@ -15,3 +15,8 @@ Preview with `python -m http.server 8080`. No build step or runtime credentials 
 `examples.json` contains exactly three new, source-guided paid records: energy capacity, electric-car sales/stock and Internet use by income group. `examples/` serves the three original JSON records and the report page. The five earlier records and the archive section have been removed from the public site; historical captures remain in the private operational record and Git history. Do not overwrite them to pretend a past response changed.
 
 The hero and OpenAPI response example use the first new record. Main figures, reporting periods and source linkage were checked against the publications, and all three 0.20 USDC transfers were verified on Base. Returned outputs are unchanged. These demonstrations are not organic purchases or an independent accuracy benchmark.
+
+
+## Maintenance contract 1.2.1
+
+Both static x402 discovery aliases now recommend the canonical v2 endpoint and refer to canonical API discovery for current recovery durability. OpenAPI copies document null context and service failures for unfinished research. Recovery files expire after 24 hours and are swept periodically in the existing API process. The three public paid examples are unchanged. No new runtime service or subscription is introduced.

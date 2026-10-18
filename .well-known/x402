@@ -34,5 +34,12 @@
   "ownershipProofs": [
     "0xdfd6cb683F5288e1dD1337E84C09b490857CC110"
   ],
-  "recommendedEndpoint": "https://api.saververify.com/v2/verify"
+  "recommendedEndpoint": "https://api.saververify.com/v2/verify",
+  "resultRecovery": {
+    "discovery": "https://api.saververify.com/.well-known/x402",
+    "endpoint": "https://api.saververify.com/results",
+    "tokenHeader": "SAVER-RECOVERY-TOKEN",
+    "retentionSeconds": 86400,
+    "notice": "Check resultRecovery.durable on the canonical API discovery for current persistence availability."
+  }
 }

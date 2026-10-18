@@ -33,3 +33,5 @@ The public collection contains exactly three new source-guided production record
 Request recovery: HTTP 400/413 includes code and help (method, contentType, same-route endpoint, recommendedEndpoint, minimal JSON example, openapi). Correct the request before payment; send only claim/context, not the help object.
 GET/HEAD on either verification route returns 405 with Allow: POST. GET includes JSON guidance; HEAD has no body. OPTIONS returns 200. Use /healthz for health checks.
 Retry help.endpoint to preserve the response version. Sign only after a valid 402 challenge under the existing spending policy.
+
+Incomplete or research-limited responses return HTTP 502 before settlement; do not automatically pay again after an uncertain outcome. context: null is treated as absent. Recovery expires after 24 hours, with periodic file cleanup. Check canonical API discovery for current durability.
