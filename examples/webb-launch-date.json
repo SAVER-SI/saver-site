@@ -1,0 +1,46 @@
+{
+  "id": "webb-launch-date",
+  "provenance": {
+    "kind": "paid_live_verification",
+    "operatorFunded": true,
+    "organicCustomer": false,
+    "capturedAt": "2026-10-18T10:28:47.107Z",
+    "endpoint": "https://api.saververify.com/v2/verify",
+    "priceUSDC": "0.20",
+    "network": "eip155:8453",
+    "transaction": "0x2c19eb3339f306b65682e3620b5ef20d0d8996d5da538718c95f332c08f8957e",
+    "transactionUrl": "https://basescan.org/tx/0x2c19eb3339f306b65682e3620b5ef20d0d8996d5da538718c95f332c08f8957e",
+    "requestId": "saver-paid-example-20261018-webb-launch-date"
+  },
+  "request": {
+    "claim": "The James Webb Space Telescope launched on December 25, 2021.",
+    "context": "Operator-funded paid example capture for the SAVER website. Assess the claim normally; do not tailor the verdict to an expected example category."
+  },
+  "response": {
+    "schemaVersion": "2.0",
+    "requestId": "saver-paid-example-20261018-webb-launch-date",
+    "status": "supported",
+    "confidence": 0.99,
+    "explanation": "Authoritative NASA sources state that the James Webb Space Telescope launched on Saturday, December 25, 2021, specifically at 7:20 a.m. EST / 12:20 UTC, from Europe’s Spaceport in French Guiana aboard an Ariane 5 rocket. This directly supports the claim.",
+    "domain": "general-verification",
+    "timestamp": "2026-10-18T10:28:46.217Z",
+    "confidenceType": "model_assessed",
+    "evidence": [
+      {
+        "id": "e1",
+        "text": "A NASA news article says Arianespace’s Ariane 5 rocket launched with NASA’s James Webb Space Telescope onboard on Saturday, Dec. 25, 2021, from the Guiana Space Centre in Kourou, French Guiana.",
+        "relation": "supports",
+        "sourceIds": [
+          "s1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "s1",
+        "title": "nasa.gov",
+        "url": "https://www.nasa.gov/solar-system/nasas-webb-telescope-launches-to-see-first-galaxies-distant-worlds"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "webb-wrong-year",
+  "provenance": {
+    "kind": "paid_live_verification",
+    "operatorFunded": true,
+    "organicCustomer": false,
+    "capturedAt": "2026-10-18T10:29:02.809Z",
+    "endpoint": "https://api.saververify.com/v2/verify",
+    "priceUSDC": "0.20",
+    "network": "eip155:8453",
+    "transaction": "0x2ec38c4c9e566949212ee1dcc5f7c29d7182fbfc5908f9b1f6ebacd72a38ca81",
+    "transactionUrl": "https://basescan.org/tx/0x2ec38c4c9e566949212ee1dcc5f7c29d7182fbfc5908f9b1f6ebacd72a38ca81",
+    "requestId": "saver-paid-example-20261018-webb-wrong-year"
+  },
+  "request": {
+    "claim": "The James Webb Space Telescope was first launched in 2023.",
+    "context": "Operator-funded paid example capture for the SAVER website. Assess the claim normally; do not tailor the verdict to an expected example category."
+  },
+  "response": {
+    "schemaVersion": "2.0",
+    "requestId": "saver-paid-example-20261018-webb-wrong-year",
+    "status": "contradicted",
+    "confidence": 0.99,
+    "explanation": "The claim says the James Webb Space Telescope was first launched in 2023. Authoritative NASA sources state that Webb launched on December 25, 2021, not in 2023.",
+    "domain": "general-verification",
+    "timestamp": "2026-10-18T10:29:01.900Z",
+    "confidenceType": "model_assessed",
+    "evidence": [
+      {
+        "id": "e1",
+        "text": "A NASA news release published for the launch states that NASA’s James Webb Space Telescope launched at 7:20 a.m. EST on Saturday, December 25, 2021.",
+        "relation": "contradicts",
+        "sourceIds": [
+          "s1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "s1",
+        "title": "nasa.gov",
+        "url": "https://www.nasa.gov/solar-system/nasas-webb-telescope-launches-to-see-first-galaxies-distant-worlds"
+      }
+    ]
+  }
+}

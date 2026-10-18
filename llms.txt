@@ -1,0 +1,28 @@
+# SAVER Verifier
+
+Independent factual checks for agent research and reports.
+Use when an externally sourced claim needs a cited second check. Not for transaction simulation, wallet risk or arithmetic.
+
+Canonical API: https://api.saververify.com
+Agent tool: https://saververify.com/agent-tool.json
+OpenAPI: https://saververify.com/openapi.json
+Paid result examples: https://saververify.com/examples.json
+x402 discovery: https://saververify.com/.well-known/x402
+
+POST https://api.saververify.com/v2/verify
+Content-Type: application/json
+{"claim":"The James Webb Space Telescope launched on December 25, 2021.","context":""}
+
+Send claim and optional context directly as JSON, without a body wrapper or transport fields.
+claim must be a non-empty string <=8000 UTF-16 code units; context <=12000. The JSON body limit is 128 KiB.
+POST /verify remains available with the original string-evidence response format.
+
+Price: 0.20 USDC. Base Mainnet (eip155:8453). x402 v2 exact.
+On 402, decode PAYMENT-REQUIRED (base64 JSON); the body may be {}.
+An existing authorized x402 wallet signs and retries the same body with PAYMENT-SIGNATURE.
+A successful response contains the result and PAYMENT-RESPONSE. Never expose wallet private keys.
+Use a bounded spending policy. No idempotency key or result recovery is currently offered.
+
+V2 evidence.sourceIds refer to sources.id. URLs are checked against search metadata, not independently proven correct.
+Confidence is model-assessed, not calibrated. insufficient_evidence is a completed paid result.
+Examples are actual operator-funded paid runs, not simulated outputs or organic customer demand.

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "canonicalBaseUrl": "https://api.saververify.com",
+  "service": {
+    "name": "SAVER Verifier",
+    "description": "Independent factual checks for agent research and reports, with web evidence and cited sources."
+  },
+  "resources": [
+    {
+      "url": "https://api.saververify.com/verify",
+      "method": "POST",
+      "price": {
+        "amount": "0.20",
+        "currency": "USDC"
+      },
+      "network": "eip155:8453",
+      "scheme": "exact"
+    },
+    {
+      "url": "https://api.saververify.com/v2/verify",
+      "method": "POST",
+      "price": {
+        "amount": "0.20",
+        "currency": "USDC"
+      },
+      "network": "eip155:8453",
+      "scheme": "exact"
+    }
+  ],
+  "openapi": "https://api.saververify.com/openapi.json",
+  "agentTool": "https://saververify.com/agent-tool.json",
+  "examples": "https://saververify.com/examples.json",
+  "ownershipProofs": [
+    "0xdfd6cb683F5288e1dD1337E84C09b490857CC110"
+  ]
+}
