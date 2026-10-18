@@ -1103,3 +1103,9 @@ button, input, textarea, select { font: inherit; }
 .example-card p, .example-card li { overflow-wrap: anywhere; }
 .example-page h1 { font-size: clamp(32px, 6vw, 60px); }
 .source-review { border-left: 3px solid var(--accent); padding: 4px 18px; margin-block: 24px; background: rgba(255,255,255,.025); }
+
+/* Long paid claims must remain readable without badges covering their text. */
+.hero-panel { display: flex; flex-direction: column; align-items: stretch; gap: 12px; min-height: 0; padding-bottom: 0; }
+.hero-panel .terminal-card { max-width: none; }
+.hero-panel .floating-badge { position: static; margin-top: 0; min-width: 0; width: 100%; }
+.terminal-footer a { color: var(--accent); font-size: 11px; }
