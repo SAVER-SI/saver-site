@@ -9,3 +9,7 @@ Static GitHub Pages website for SAVER Verifier. Production: https://saververify.
 The published ClawHub audit references v1.0.3 only; it is not an API accuracy audit or an audit of newer skill source revisions.
 
 Preview with `python -m http.server 8080`. No build step or runtime credentials are required. Keep the OpenAPI and tool-definition copies synchronized with the canonical API contract. Never place environment files or server implementation in this repository.
+
+## Paid research examples
+
+The two featured research checks (with explicit source-coverage limitations) and three earlier integration checks are preserved in `examples.json`. `examples/` serves individual original records and the HTML comparison page. The hero and OpenAPI v2 response example use the first featured paid record. Answers and transaction references are copied unchanged from successful production captures. No server implementation or credentials belong in this repository.
