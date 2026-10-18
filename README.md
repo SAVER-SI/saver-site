@@ -10,6 +10,8 @@ The published ClawHub audit references v1.0.3 only; it is not an API accuracy au
 
 Preview with `python -m http.server 8080`. No build step or runtime credentials are required. Keep the OpenAPI and tool-definition copies synchronized with the canonical API contract. Never place environment files or server implementation in this repository.
 
-## Paid research examples
+## Three current paid examples
 
-The two featured research checks (with explicit source-coverage limitations) and three earlier integration checks are preserved in `examples.json`. `examples/` serves individual original records and the HTML comparison page. The hero and OpenAPI v2 response example use the first featured paid record. Answers and transaction references are copied unchanged from successful production captures. No server implementation or credentials belong in this repository.
+`examples.json` contains exactly three new, source-guided paid records: energy capacity, electric-car sales/stock and Internet use by income group. `examples/` serves the three original JSON records and the report page. The five earlier records and the archive section have been removed from the public site; historical captures remain in the private operational record and Git history. Do not overwrite them to pretend a past response changed.
+
+The hero and OpenAPI response example use the first new record. Main figures, reporting periods and source linkage were checked against the publications, and all three 0.20 USDC transfers were verified on Base. Returned outputs are unchanged. These demonstrations are not organic purchases or an independent accuracy benchmark.

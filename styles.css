@@ -1109,3 +1109,39 @@ button, input, textarea, select { font: inherit; }
 .hero-panel .terminal-card { max-width: none; }
 .hero-panel .floating-badge { position: static; margin-top: 0; min-width: 0; width: 100%; }
 .terminal-footer a { color: var(--accent); font-size: 11px; }
+
+/* Paid report collection: three source-guided cases, readable on small screens. */
+.examples-heading { max-width: 900px; padding-block: 42px 20px; }
+.examples-heading h1 { line-height: 1.08; letter-spacing: -.04em; margin: 20px 0; }
+.examples-heading > p { max-width: 72ch; font-size: 19px; color: var(--muted); }
+.examples-facts, .case-metrics, .case-proof { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.examples-facts { color: var(--muted); font-size: 13px; margin-top: 28px; }
+.case-previews { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 34px 0 58px; }
+.case-preview { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.case-preview:hover { border-color: var(--accent); }
+.case-preview h2 { font-size: 24px; line-height: 1.2; margin: 18px 0 8px; }
+.case-preview p { color: var(--muted); font-size: 14px; flex: 1; }
+.verdict { display: inline-block; padding: 6px 11px; border-radius: 7px; font: 600 12px ui-monospace, monospace; }
+.verdict--supported { color: var(--accent); background: rgba(3,209,130,.09); }
+.verdict--contradicted { color: #ffc28b; background: rgba(255,177,109,.09); }
+.verdict-text--contradicted { color: #ffc28b; }
+.professional-case { padding: clamp(24px, 4vw, 46px); scroll-margin-top: 30px; }
+.case-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.professional-case > h2 { font-size: clamp(28px, 4vw, 38px); letter-spacing: -.025em; line-height: 1.2; }
+.case-purpose { color: var(--muted); }
+.submitted-claim { border-left: 2px solid var(--line-strong); padding: 8px 22px; margin-block: 28px; background: rgba(0,0,0,.12); }
+.submitted-claim p { margin-bottom: 8px; line-height: 1.75; }
+.case-explanation { font-size: 17px; line-height: 1.8; max-width: 92ch; }
+.case-metrics { color: var(--muted); font-size: 13px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+.case-metrics strong { color: var(--text); font-size: 17px; }
+.case-details { margin-top: 24px; }
+.case-details summary { cursor: pointer; color: var(--text); padding-block: 10px; font-weight: 700; }
+.finding-list { padding-left: 22px; }
+.finding-list li { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.finding-list p { margin: 8px 0; line-height: 1.75; }
+.finding-relation { color: var(--muted); font: 12px ui-monospace, monospace; }
+.case-source-list ul { display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 0; list-style: none; }
+.case-proof { margin-top: 28px; padding-block: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.examples-footer { margin: 72px 0 10px; padding-top: 32px; border-top: 1px solid var(--line); }
+.examples-footer p { max-width: 95ch; color: var(--muted); font-size: 14px; line-height: 1.8; }
+@media (max-width: 800px) { .case-previews { grid-template-columns: 1fr; } .case-preview h2 { font-size: 23px; } .examples-heading > p { font-size: 17px; } .case-explanation { font-size: 16px; } }

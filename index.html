@@ -7,18 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="SAVER Verifier — independent, cited fact checks for agent research and reports. Pay 0.20 USDC per verification with x402." />
   <meta name="theme-color" content="#111315" />
-  <meta property="og:title" content="SAVER Verifier — Verify before the agent acts." />
+  <meta property="og:title" content="SAVER Verifier — Source-backed checks for agent research" />
   <meta property="og:description" content="Source-backed factual claim verification for autonomous AI agents, paid natively with x402 on Base." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://saververify.com/" />
   <meta name="twitter:card" content="summary" />
   <link rel="canonical" href="https://saververify.com/" />
-  <title>SAVER Verifier — Verify before the agent acts.</title>
+  <title>SAVER Verifier — Source-backed checks for agent research</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20261018-research2" />
+  <link rel="stylesheet" href="./styles.css?v=professional-20261018" />
 </head>
 <body>
   <div class="page-glow page-glow-a"></div>
@@ -107,7 +107,7 @@
               <div class="flow-index">01</div>
               <div class="flow-main">
                 <span class="flow-label">claim</span>
-                <code id="sample-claim">NASA initially reported that DART shortened Dimorphos&#x27;s orbital period around Didymos by 32 minutes, and later refined that measurement to 33 minutes. These figures describe an orbital-period change, not a change in a predicted Earth-impact time.</code>
+                <code id="sample-claim">IRENA&#x27;s Renewable Capacity Statistics 2024 shows that renewables generated 86% of global electricity in 2023.</code>
               </div>
             </div>
 
@@ -130,22 +130,22 @@
                 <div class="result-grid">
                   <div>
                     <span>Status</span>
-                    <strong class="positive" id="sample-status">supported</strong>
+                    <strong class="verdict-text--contradicted" id="sample-status">contradicted</strong>
                   </div>
                   <div>
                     <span>Confidence</span>
-                    <strong id="sample-confidence">0.96</strong>
+                    <strong id="sample-confidence">0.98</strong>
                   </div>
                   <div>
                     <span>Evidence</span>
-                    <strong>2 linked findings</strong>
+                    <strong>6 linked findings</strong>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="terminal-footer"><span>operator-funded · captured before source-link update · model-assessed confidence</span><a href="/examples/">Read the source-coverage limitations</a>
+          <div class="terminal-footer"><span>paid live run · 18 October 2026 · model-assessed confidence</span><a href="/examples/">Inspect all three source-checked reports</a>
             <span>evidence</span>
             <span>sources</span>
             <span>confidence</span>
@@ -306,41 +306,93 @@
         </div>
 
         <pre class="code-pane active" data-pane="request"><code>{
-  &quot;claim&quot;: &quot;NASA initially reported that DART shortened Dimorphos&#x27;s orbital period around Didymos by 32 minutes, and later refined that measurement to 33 minutes. These figures describe an orbital-period change, not a change in a predicted Earth-impact time.&quot;,
-  &quot;context&quot;: &quot;Checking apparently conflicting figures in a science and engineering briefing. Assess the original and revised measurements and what they measure, using primary sources.&quot;
+  &quot;claim&quot;: &quot;IRENA&#x27;s Renewable Capacity Statistics 2024 shows that renewables generated 86% of global electricity in 2023.&quot;,
+  &quot;context&quot;: &quot;An energy-sector briefing cites https://www.irena.org/News/pressreleases/2024/Mar/Record-Growth-in-Renewables-but-Progress-Needs-to-be-Equitable . Independently check the attributed statistic against the original publication, including the year, measured quantity and denominator.&quot;
 }</code></pre>
         <pre class="code-pane" data-pane="response"><code>{
   &quot;schemaVersion&quot;: &quot;2.0&quot;,
-  &quot;requestId&quot;: &quot;saver-research-example-20261018-dart-measurement-revision&quot;,
-  &quot;status&quot;: &quot;supported&quot;,
-  &quot;confidence&quot;: 0.96,
-  &quot;explanation&quot;: &quot;Primary NASA sources support the claim. NASA’s Oct. 11, 2022 release reported that DART changed Dimorphos’s orbit around Didymos by 32 minutes, shortening the orbital period from 11 h 55 min to 11 h 23 min, with ±2 min uncertainty. NASA’s final technical report says this initial announcement was later improved, with additional observations, to an orbital-period change of about −33.24 minutes; NASA and the Nature DART results also summarize the refined result as about 33 minutes. The sources consistently describe a change in Dimorphos’s binary orbital period around Didymos, not a predicted Earth-impact time; NASA also stated Dimorphos and Didymos posed no hazard to Earth before or after the collision.&quot;,
+  &quot;requestId&quot;: &quot;saver-professional-example-20261018-energy-capacity-check&quot;,
+  &quot;status&quot;: &quot;contradicted&quot;,
+  &quot;confidence&quot;: 0.98,
+  &quot;explanation&quot;: &quot;The attributed statistic is misread. IRENA&#x27;s Renewable Capacity Statistics 2024 is a capacity publication, and its 86% figure refers to renewables&#x27; share of global power capacity additions in 2023, not electricity generated. The same IRENA publication says renewables were 43%/43.2% of global installed power capacity at the end of 2023. IRENA&#x27;s separate Renewable Energy Statistics 2024 treats electricity production in GWh and its world renewable electricity production share table runs through 2022, showing 29.1% in 2022 rather than any 86% generation figure for 2023. Independent global electricity-generation sources report about 30% renewable generation in 2023, not 86%.&quot;,
   &quot;domain&quot;: &quot;general-verification&quot;,
-  &quot;timestamp&quot;: &quot;2026-10-18T11:10:12.212Z&quot;,
+  &quot;timestamp&quot;: &quot;2026-10-18T14:25:57.697Z&quot;,
   &quot;confidenceType&quot;: &quot;model_assessed&quot;,
   &quot;evidence&quot;: [
     {
       &quot;id&quot;: &quot;e1&quot;,
-      &quot;text&quot;: &quot;NASA’s Oct. 11, 2022 release stated that before DART, Dimorphos took 11 hours 55 minutes to orbit Didymos, and that the impact altered Dimorphos’s orbit around Didymos by 32 minutes, shortening it to 11 hours 23 minutes, with an uncertainty of about plus or minus 2 minutes.&quot;,
-      &quot;relation&quot;: &quot;supports&quot;,
+      &quot;text&quot;: &quot;IRENA&#x27;s Renewable Capacity Statistics 2024 foreword says the publication illustrates growth in new installed power generation capacity in 2023; it states that by the end of 2023 renewables accounted for 43% of global installed power capacity, and that the 86% figure was renewables&#x27; share of global power additions after adding 473 GW of renewable capacity.&quot;,
+      &quot;relation&quot;: &quot;contradicts&quot;,
       &quot;sourceIds&quot;: [
         &quot;s1&quot;
       ]
     },
     {
       &quot;id&quot;: &quot;e2&quot;,
-      &quot;text&quot;: &quot;NASA’s mission fact sheet described the planned measurement as telescopes observing the Didymos-Dimorphos system to measure the change in Dimorphos’s orbit around Didymos, and NASA’s Oct. 11 release stated neither Dimorphos nor Didymos posed any hazard to Earth before or after the controlled collision.&quot;,
-      &quot;relation&quot;: &quot;supports&quot;,
+      &quot;text&quot;: &quot;The IRENA press release cited in the briefing likewise says Renewable Capacity Statistics 2024 showed total renewable capacity of 3,870 GW globally in 2023 and that renewables accounted for 86% of capacity additions; it does not describe the 86% as electricity generated.&quot;,
+      &quot;relation&quot;: &quot;contradicts&quot;,
+      &quot;sourceIds&quot;: [
+        &quot;s2&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;e3&quot;,
+      &quot;text&quot;: &quot;In Renewable Capacity Statistics 2024, IRENA&#x27;s table for &#x27;Renewable energy share of electricity capacity&#x27; lists the World row as 43.2% for 2023, confirming the publication is reporting installed electricity capacity shares, not generated electricity shares.&quot;,
+      &quot;relation&quot;: &quot;contradicts&quot;,
       &quot;sourceIds&quot;: [
         &quot;s1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;e4&quot;,
+      &quot;text&quot;: &quot;IRENA&#x27;s separate Renewable Energy Statistics 2024 explains that generation data are presented in GWh and includes an indicator for &#x27;Renewable energy share of electricity production.&#x27; Its world production-share table covers 2014-2022 and reports 29.1% for 2022, not an 86% global generation share for 2023.&quot;,
+      &quot;relation&quot;: &quot;contradicts&quot;,
+      &quot;sourceIds&quot;: [
+        &quot;s3&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;e5&quot;,
+      &quot;text&quot;: &quot;Ember&#x27;s Global Electricity Review 2024 reports that renewables reached 30% of global electricity generation in 2023; it further breaks out hydro at 14%, wind at 7.8%, solar at 5.5%, bioenergy at 2.4%, and other renewables at 0.3%.&quot;,
+      &quot;relation&quot;: &quot;contradicts&quot;,
+      &quot;sourceIds&quot;: [
+        &quot;s4&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;e6&quot;,
+      &quot;text&quot;: &quot;Our World in Data, using Ember&#x27;s final 2023 global electricity generation data, says renewables produced just over 30% of the world&#x27;s electricity in 2023.&quot;,
+      &quot;relation&quot;: &quot;contradicts&quot;,
+      &quot;sourceIds&quot;: [
+        &quot;s5&quot;
       ]
     }
   ],
   &quot;sources&quot;: [
     {
       &quot;id&quot;: &quot;s1&quot;,
-      &quot;title&quot;: &quot;nasa.gov&quot;,
-      &quot;url&quot;: &quot;https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space&quot;
+      &quot;title&quot;: &quot;irena.org&quot;,
+      &quot;url&quot;: &quot;https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2024/Mar/IRENA_RE_Capacity_Statistics_2024.pdf?rev=a587503ac9a2435c8d13e40081d2ec34&quot;
+    },
+    {
+      &quot;id&quot;: &quot;s2&quot;,
+      &quot;title&quot;: &quot;irena.org&quot;,
+      &quot;url&quot;: &quot;https://www.irena.org/News/pressreleases/2024/Mar/Record-Growth-in-Renewables-but-Progress-Needs-to-be-Equitable&quot;
+    },
+    {
+      &quot;id&quot;: &quot;s3&quot;,
+      &quot;title&quot;: &quot;irena.org&quot;,
+      &quot;url&quot;: &quot;https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2024/Jul/IRENA_Renewable_Energy_Statistics_2024.pdf&quot;
+    },
+    {
+      &quot;id&quot;: &quot;s4&quot;,
+      &quot;title&quot;: &quot;ember-energy.org&quot;,
+      &quot;url&quot;: &quot;https://ember-energy.org/latest-insights/global-electricity-review-2024/global-electricity-trends&quot;
+    },
+    {
+      &quot;id&quot;: &quot;s5&quot;,
+      &quot;title&quot;: &quot;ourworldindata.org&quot;,
+      &quot;url&quot;: &quot;https://ourworldindata.org/data-insights/renewable-electricity-2023&quot;
     }
   ]
 }</code></pre>
