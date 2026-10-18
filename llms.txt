@@ -11,7 +11,7 @@ x402 discovery: https://saververify.com/.well-known/x402
 
 POST https://api.saververify.com/v2/verify
 Content-Type: application/json
-{"claim": "NASA initially reported that DART shortened Dimorphos's orbital period around Didymos by 32 minutes, and later refined that measurement to 33 minutes. These figures describe an orbital-period change, not a change in a predicted Earth-impact time.", "context": "Checking apparently conflicting figures in a science and engineering briefing. Assess the original and revised measurements and what they measure, using primary sources."}
+{"claim": "IRENA's Renewable Capacity Statistics 2024 shows that renewables generated 86% of global electricity in 2023.", "context": "An energy-sector briefing cites https://www.irena.org/News/pressreleases/2024/Mar/Record-Growth-in-Renewables-but-Progress-Needs-to-be-Equitable . Independently check the attributed statistic against the original publication, including the year, measured quantity and denominator."}
 
 Send claim and optional context directly as JSON, without a body wrapper or transport fields.
 claim must be a non-empty string <=8000 UTF-16 code units; context <=12000. The JSON body limit is 128 KiB.
@@ -27,8 +27,5 @@ V2 evidence.sourceIds refer to sources.id. URLs are checked against search metad
 Confidence is model-assessed, not calibrated. insufficient_evidence is a completed paid result.
 Examples are actual operator-funded paid runs, not simulated outputs or organic customer demand.
 
-Featured paid cases: capacity versus electricity generation; revised DART orbital-period measurement.
-All five paid records are retained; the first three are earlier integration checks.
-
-Source-linking update: v2 preserves consulted source references and rejects incomplete evidence linkage.
-The five stored paid reports predate this update; no post-update paid retest has been performed.
+Current paid cases: energy capacity versus generation; electric-car sales versus fleet; global versus income-group Internet use.
+The public collection contains exactly three new source-guided production records, captured after the source-linking update on 2026-10-18. Each includes its original output and a successful 0.20 USDC Base transaction. Source URLs were supplied by the caller.
