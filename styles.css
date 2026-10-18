@@ -1098,3 +1098,8 @@ button, input, textarea, select { font: inherit; }
 .example-page { padding-block: 48px 80px; }
 
 .code-pane { max-height: 520px; overflow: auto; }
+
+.archive-heading { margin-top: 72px; }
+.example-card p, .example-card li { overflow-wrap: anywhere; }
+.example-page h1 { font-size: clamp(32px, 6vw, 60px); }
+.source-review { border-left: 3px solid var(--accent); padding: 4px 18px; margin-block: 24px; background: rgba(255,255,255,.025); }

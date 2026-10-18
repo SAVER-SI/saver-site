@@ -11,7 +11,7 @@ x402 discovery: https://saververify.com/.well-known/x402
 
 POST https://api.saververify.com/v2/verify
 Content-Type: application/json
-{"claim":"The James Webb Space Telescope launched on December 25, 2021.","context":""}
+{"claim": "NASA initially reported that DART shortened Dimorphos's orbital period around Didymos by 32 minutes, and later refined that measurement to 33 minutes. These figures describe an orbital-period change, not a change in a predicted Earth-impact time.", "context": "Checking apparently conflicting figures in a science and engineering briefing. Assess the original and revised measurements and what they measure, using primary sources."}
 
 Send claim and optional context directly as JSON, without a body wrapper or transport fields.
 claim must be a non-empty string <=8000 UTF-16 code units; context <=12000. The JSON body limit is 128 KiB.
@@ -26,3 +26,6 @@ Use a bounded spending policy. No idempotency key or result recovery is currentl
 V2 evidence.sourceIds refer to sources.id. URLs are checked against search metadata, not independently proven correct.
 Confidence is model-assessed, not calibrated. insufficient_evidence is a completed paid result.
 Examples are actual operator-funded paid runs, not simulated outputs or organic customer demand.
+
+Featured paid cases: capacity versus electricity generation; revised DART orbital-period measurement.
+All five paid records are retained; the first three are earlier integration checks.
