@@ -29,3 +29,7 @@ Examples are actual operator-funded paid runs, not simulated outputs or organic 
 
 Current paid cases: energy capacity versus generation; electric-car sales versus fleet; global versus income-group Internet use.
 The public collection contains exactly three new source-guided production records, captured after the source-linking update on 2026-10-18. Each includes its original output and a successful 0.20 USDC Base transaction. Source URLs were supplied by the caller.
+
+Request recovery: HTTP 400/413 includes code and help (method, contentType, same-route endpoint, recommendedEndpoint, minimal JSON example, openapi). Correct the request before payment; send only claim/context, not the help object.
+GET/HEAD on either verification route returns 405 with Allow: POST. GET includes JSON guidance; HEAD has no body. OPTIONS returns 200. Use /healthz for health checks.
+Retry help.endpoint to preserve the response version. Sign only after a valid 402 challenge under the existing spending policy.
