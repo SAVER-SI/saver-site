@@ -7,17 +7,18 @@
   },
   "resources": [
     {
-      "url": "https://api.saververify.com/verify",
+      "url": "https://api.saververify.com/v2/verify",
       "method": "POST",
       "price": {
         "amount": "0.20",
         "currency": "USDC"
       },
       "network": "eip155:8453",
-      "scheme": "exact"
+      "scheme": "exact",
+      "responseVersion": "2.0"
     },
     {
-      "url": "https://api.saververify.com/v2/verify",
+      "url": "https://api.saververify.com/verify",
       "method": "POST",
       "price": {
         "amount": "0.20",
@@ -32,5 +33,6 @@
   "examples": "https://saververify.com/examples.json",
   "ownershipProofs": [
     "0xdfd6cb683F5288e1dD1337E84C09b490857CC110"
-  ]
+  ],
+  "recommendedEndpoint": "https://api.saververify.com/v2/verify"
 }
