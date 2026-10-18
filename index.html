@@ -272,9 +272,9 @@
     <section class="section shell code-section" id="integrate">
       <div class="code-copy reveal">
         <span class="section-kicker">Integrate</span>
-        <h2>One endpoint.<br />Built for software, not forms.</h2>
+        <h2>One request.<br />Built for software, not forms.</h2>
         <p>
-          Send a claim to <code>POST /verify</code>. An unpaid request returns
+          Send a claim to <code>POST /v2/verify</code>. An unpaid request returns
           HTTP 402 with payment requirements in the PAYMENT-REQUIRED header.
           An authorized x402 v2 wallet client signs and retries the same JSON body.
           Use POST /v2/verify for linked evidence; POST /verify keeps the original format.
@@ -411,7 +411,7 @@
         <a class="ecosystem-card reveal" href="https://api.saververify.com/openapi.json" target="_blank" rel="noreferrer">
           <span class="ecosystem-tag">Contract</span>
           <strong>OpenAPI 3.1</strong>
-          <p>Machine-readable request and response contract for <code>POST /verify</code>.</p>
+          <p>Machine-readable contracts for <code>POST /v2/verify</code> and the original <code>POST /verify</code>.</p>
           <span class="ecosystem-arrow">↗</span>
         </a>
 
