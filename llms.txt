@@ -29,3 +29,6 @@ Examples are actual operator-funded paid runs, not simulated outputs or organic 
 
 Featured paid cases: capacity versus electricity generation; revised DART orbital-period measurement.
 All five paid records are retained; the first three are earlier integration checks.
+
+Source-linking update: v2 preserves consulted source references and rejects incomplete evidence linkage.
+The five stored paid reports predate this update; no post-update paid retest has been performed.
