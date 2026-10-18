@@ -21,7 +21,7 @@ Price: 0.20 USDC. Base Mainnet (eip155:8453). x402 v2 exact.
 On 402, decode PAYMENT-REQUIRED (base64 JSON); the body may be {}.
 An existing authorized x402 wallet signs and retries the same body with PAYMENT-SIGNATURE.
 A successful response contains the result and PAYMENT-RESPONSE. Never expose wallet private keys.
-Use a bounded spending policy. No idempotency key or result recovery is currently offered.
+Use a bounded spending policy. Optional result recovery: save SAVER-RECOVERY-TOKEN before POST, then GET /results with that header. Check resultRecovery.durable in x402 discovery for restart persistence.
 
 V2 evidence.sourceIds refer to sources.id. URLs are checked against search metadata, not independently proven correct.
 Confidence is model-assessed, not calibrated. insufficient_evidence is a completed paid result.
