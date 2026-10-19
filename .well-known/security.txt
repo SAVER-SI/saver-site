@@ -1,5 +1,6 @@
-Contact: mailto:rjp.saver@gmail.com
+Contact: https://github.com/SAVER-SI/saver-verifier/blob/main/SECURITY.md
 Expires: 2027-10-01T00:00:00Z
 Preferred-Languages: en
 Canonical: https://saververify.com/.well-known/security.txt
 Policy: https://github.com/SAVER-SI/saver-verifier/blob/main/SECURITY.md
+

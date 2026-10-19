@@ -20,3 +20,8 @@ The hero and OpenAPI response example use the first new record. Main figures, re
 ## Maintenance contract 1.2.1
 
 Both static x402 discovery aliases now recommend the canonical v2 endpoint and refer to canonical API discovery for current recovery durability. OpenAPI copies document null context and service failures for unfinished research. Recovery files expire after 24 hours and are swept periodically in the existing API process. The three public paid examples are unchanged. No new runtime service or subscription is introduced.
+
+
+## Maintenance contract 1.2.2
+
+OpenAPI and the flat tool definition match API release 1.2.2, including null context and invalid-provider-response failures before settlement. SECURITY.md in the public documentation repo is the HTTPS contact referenced by security.txt. It explains how to arrange private security reporting without publishing a private mailbox or pretending that a support mailbox exists. Three public paid records remain unchanged.
