@@ -6,7 +6,7 @@ Static GitHub Pages website for SAVER Verifier. Production: https://saververify.
 
 `examples.json` and `examples/index.html` publish actual paid result records only. An empty collection must remain explicitly empty; never fabricate results or present offline fixtures as paid examples. Identify operator-funded purchases and retain original outputs and transaction references. Do not count them as organic customers.
 
-The published ClawHub skill is v1.1.0. Its exact-version security status was checked as clean on 2026-10-18; this is a skill scan, not an API accuracy audit or an audit of future revisions.
+The published ClawHub skill is v1.1.1. The operator's exact-version CLI output confirms latest 1.1.1, security status clean and no warnings on 2026-10-19; this is a skill scan, not an API accuracy audit or an audit of future revisions.
 
 Preview with `python -m http.server 8080`. No build step or runtime credentials are required. Keep the OpenAPI and tool-definition copies synchronized with the canonical API contract. Never place environment files or server implementation in this repository.
 
