@@ -33,3 +33,9 @@ The website and discovery metadata describe the same existing claim-verification
 ## Presentation refinement — 23 October 2026
 
 Keep the existing page structure and three paid examples. The hero explains the capacity-versus-generation finding, report cards link to readable case anchors, and the integration card shows the full POST endpoint above the unchanged request/response examples. ClawHub labels describe a skill scan rather than a full code audit. Small-text contrast, keyboard focus and fixed-header anchor spacing are improved. No paid JSON, API contract, prices, model settings or payment behavior changes.
+
+## Choosing a claim review
+
+Use the free `selectionGuide` in [agent-tool.json](https://saververify.com/agent-tool.json) to inspect the concrete checks and the three recorded findings before buying. It distinguishes measurement and denominator errors, sales versus stock, and population scope. Every demonstration links to its unchanged paid record.
+
+SAVER offers a separately cited assessment of one material claim. If the existing workflow has already resolved the original source and relevant definitions, another paid assessment may add little value. These examples show the output format and scope; they do not prove superior accuracy or verify an entire report.

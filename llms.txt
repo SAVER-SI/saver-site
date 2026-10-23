@@ -37,3 +37,7 @@ GET/HEAD on either verification route returns 405 with Allow: POST. GET includes
 Retry help.endpoint to preserve the response version. Sign only after a valid 402 challenge under the existing spending policy.
 
 Invalid source linkage, incomplete or research-limited responses return HTTP 502 before settlement; do not automatically pay again after an uncertain outcome. context: null is treated as absent. Recovery expires after 24 hours, with periodic file cleanup. Check canonical API discovery for current durability.
+
+Selection guide: agent-tool.json includes selectionGuide with fit criteria and three recorded findings, linked to the unchanged paid records. It covers measurement/denominator, sales/stock and population scope.
+A separately cited claim review may help when these distinctions remain unresolved. Existing search may suffice when the original source and scope are already checked. One supported claim does not verify an entire report. These source-guided operator-funded examples do not establish comparative accuracy.
+Research-report checkpoint: https://github.com/SAVER-SI/saver-verifier/blob/main/docs/research-report-review.md
