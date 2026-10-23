@@ -25,3 +25,7 @@ Both static x402 discovery aliases now recommend the canonical v2 endpoint and r
 ## Maintenance contract 1.2.2
 
 OpenAPI and the flat tool definition match API release 1.2.2, including null context and invalid-provider-response failures before settlement. SECURITY.md in the public documentation repo is the HTTPS contact referenced by security.txt. It explains how to arrange private security reporting without publishing a private mailbox or pretending that a support mailbox exists. Three public paid records remain unchanged.
+
+## Buyer-facing descriptions
+
+The website and discovery metadata describe the same existing claim-verification service: figures, dates and source attributions checked before use in research, reports or decisions. Three stored operator-funded reports provide free inspection of actual paid outputs; they are not customer reviews or an independent accuracy benchmark. Price remains 0.20 USDC per completed verification. No new verification features, research calls or payment permissions are introduced by this wording update.

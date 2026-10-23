@@ -3,7 +3,7 @@
   "canonicalBaseUrl": "https://api.saververify.com",
   "service": {
     "name": "SAVER Verifier",
-    "description": "Independent factual checks for agent research and reports, with web evidence and cited sources."
+    "description": "Fact-check claims before they are used in AI-generated research, reports or decisions. Checks figures, dates and source attributions against web evidence; returns a verdict, explanation and cited sources. 0.20 USDC per completed verification via x402 v2 on Base. Confidence is model-assessed; wallet security and arithmetic require dedicated tools."
   },
   "resources": [
     {

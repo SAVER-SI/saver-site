@@ -1,7 +1,9 @@
 # SAVER Verifier
 
-Independent factual checks for agent research and reports.
-Use when an externally sourced claim needs a cited second check. Not for transaction simulation, wallet risk or arithmetic.
+Factual checks before claims are used in agent research, reports or decisions.
+Checks figures, dates and source attributions against web evidence when an error would change the output.
+Stored paid examples cover capacity versus generation, sales versus fleet, and global versus income-group figures.
+Not for transaction simulation, wallet risk or arithmetic.
 
 Canonical API: https://api.saververify.com
 Agent tool: https://saververify.com/agent-tool.json
@@ -34,4 +36,4 @@ Request recovery: HTTP 400/413 includes code and help (method, contentType, same
 GET/HEAD on either verification route returns 405 with Allow: POST. GET includes JSON guidance; HEAD has no body. OPTIONS returns 200. Use /healthz for health checks.
 Retry help.endpoint to preserve the response version. Sign only after a valid 402 challenge under the existing spending policy.
 
-Incomplete or research-limited responses return HTTP 502 before settlement; do not automatically pay again after an uncertain outcome. context: null is treated as absent. Recovery expires after 24 hours, with periodic file cleanup. Check canonical API discovery for current durability.
+Invalid source linkage, incomplete or research-limited responses return HTTP 502 before settlement; do not automatically pay again after an uncertain outcome. context: null is treated as absent. Recovery expires after 24 hours, with periodic file cleanup. Check canonical API discovery for current durability.
