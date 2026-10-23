@@ -1,7 +1,6 @@
 # SAVER Verifier
 
-Fact-checking and claim verification for agent research and reports.
-Checks figures, dates and source attributions against web evidence when an error would change the output.
+Verify factual claims and check whether cited sources support them. Fact-check statistics, dates and source attributions in agent research and reports against web evidence, preserving reporting periods, units and population groups. Returns a verdict, explanation and cited sources; /v2/verify links evidence to source IDs. 0.20 USDC via x402 v2 on Base. Model-assessed; no signup or API key.
 Stored paid examples cover capacity versus generation, sales versus fleet, and global versus income-group figures.
 Not for transaction simulation, wallet risk or arithmetic.
 

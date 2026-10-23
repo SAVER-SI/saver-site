@@ -1,5 +1,10 @@
 # Changes
 
+## 2026-10-23 — claim and citation discovery wording
+
+- Describe factual-claim and cited-source checks directly while preserving the statistics, dates and reporting-scope focus.
+- Synchronize service metadata and documentation; payment terms, response schemas, model and recorded paid examples are unchanged.
+
 ## 23 October 2026 — discovery consistency and documentation
 
 - Align the service description in both static `.well-known/x402` files with the current API/tool/OpenAPI description.

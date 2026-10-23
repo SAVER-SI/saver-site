@@ -1,6 +1,6 @@
 # SAVER Verifier website
 
-Static GitHub Pages website at https://saververify.com. Fact-checking and claim verification for agent research and reports.
+Static GitHub Pages website at https://saververify.com. Verify factual claims and check whether cited sources support them. Fact-check statistics, dates and source attributions in agent research and reports.
 
 ## Repository boundaries
 
