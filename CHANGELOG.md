@@ -1,5 +1,10 @@
 # Changes
 
+## 2026-10-23 — search engine service metadata
+
+- Add factual WebAPI structured data, a descriptive page title and the actual homepage modification date in the sitemap.
+- Extend offline metadata checks to cover structured data. Presentation, API behavior and paid examples are unchanged.
+
 ## 2026-10-23 — claim and citation discovery wording
 
 - Describe factual-claim and cited-source checks directly while preserving the statistics, dates and reporting-scope focus.

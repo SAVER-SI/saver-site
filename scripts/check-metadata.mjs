@@ -33,3 +33,13 @@ for (const resource of manifest.resources) {
   assert.equal(terms.asset.toLowerCase(), '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913');
 }
 console.log('Static descriptions, routes, x402 tags and payment terms are consistent. No network or payment performed.');
+
+const html = await readFile(new URL('index.html', root), 'utf8');
+const structuredBlock = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+assert.ok(structuredBlock, 'missing WebAPI structured data');
+const structured = JSON.parse(structuredBlock[1]);
+assert.equal(structured['@type'], 'WebAPI');
+assert.equal(structured.description, description, 'structured description drift');
+assert.equal(structured.url, tool.transport.url);
+assert.equal(structured.mainEntityOfPage, 'https://saververify.com/');
+console.log('WebAPI structured data matches the canonical description and endpoint.');

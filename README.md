@@ -29,3 +29,7 @@ Do not replace actual results with fixtures, add an unreviewed fourth example or
 GitHub Pages publishes the repository after a push. The offline `Static metadata checks` workflow compares descriptions, aliases, routes, tags and payment terms without network requests, secrets or payments. Run it locally with `node scripts/check-metadata.mjs`. Verify the Pages workflow, homepage, example collection and both discovery aliases after changes. Compare shared schemas and descriptions with the canonical API. A production payment is not required for static documentation changes.
 
 The HTML presentation and example records were not changed in this cleanup. See [CHANGELOG.md](CHANGELOG.md) and Git history for dated changes rather than treating historic test counts as current status.
+
+## Search indexing
+
+The homepage publishes Schema.org WebAPI JSON-LD with the canonical service description and POST endpoint. The offline metadata check verifies that it stays synchronized. The sitemap records actual homepage modification dates; search engines determine crawl timing and ranking. Do not add self-assigned review scores or treat operator tests as customer adoption.
