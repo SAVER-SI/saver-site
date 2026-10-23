@@ -39,3 +39,9 @@ Keep the existing page structure and three paid examples. The hero explains the 
 Use the free `selectionGuide` in [agent-tool.json](https://saververify.com/agent-tool.json) to inspect the concrete checks and the three recorded findings before buying. It distinguishes measurement and denominator errors, sales versus stock, and population scope. Every demonstration links to its unchanged paid record.
 
 SAVER offers a separately cited assessment of one material claim. If the existing workflow has already resolved the original source and relevant definitions, another paid assessment may add little value. These examples show the output format and scope; they do not prove superior accuracy or verify an entire report.
+
+## Directory import manifest
+
+The free [x402 import manifest](https://api.saververify.com/x402-manifest.json), also served at `https://api.saververify.com/.well-known/x402.json`, describes both POST resources with x402 v2 `accepts`, request schemas, input examples and recorded output examples. The existing `/.well-known/x402` overview remains available.
+
+The manifest is a public production snapshot, not a payment authorization. Clients validate the current 402 challenge before signing. Keep all repository copies aligned when payment terms or schemas change. Importers must retain the POST method and request schema; a listing or code sample that substitutes GET cannot execute these resources.
