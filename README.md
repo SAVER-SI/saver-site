@@ -29,3 +29,7 @@ OpenAPI and the flat tool definition match API release 1.2.2, including null con
 ## Buyer-facing descriptions
 
 The website and discovery metadata describe the same existing claim-verification service: figures, dates and source attributions checked before use in research, reports or decisions. Three stored operator-funded reports provide free inspection of actual paid outputs; they are not customer reviews or an independent accuracy benchmark. Price remains 0.20 USDC per completed verification. No new verification features, research calls or payment permissions are introduced by this wording update.
+
+## Presentation refinement — 23 October 2026
+
+Keep the existing page structure and three paid examples. The hero explains the capacity-versus-generation finding, report cards link to readable case anchors, and the integration card shows the full POST endpoint above the unchanged request/response examples. ClawHub labels describe a skill scan rather than a full code audit. Small-text contrast, keyboard focus and fixed-header anchor spacing are improved. No paid JSON, API contract, prices, model settings or payment behavior changes.

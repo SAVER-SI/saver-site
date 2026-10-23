@@ -1145,3 +1145,18 @@ button, input, textarea, select { font: inherit; }
 .examples-footer { margin: 72px 0 10px; padding-top: 32px; border-top: 1px solid var(--line); }
 .examples-footer p { max-width: 95ch; color: var(--muted); font-size: 14px; line-height: 1.8; }
 @media (max-width: 800px) { .case-previews { grid-template-columns: 1fr; } .case-preview h2 { font-size: 23px; } .examples-heading > p { font-size: 17px; } .case-explanation { font-size: 16px; } }
+
+/* Presentation refinement: clear report takeaway and a usable request address. */
+.terminal-footer { flex-direction: column; gap: 9px; }
+.terminal-footer .result-takeaway { margin: 0; color: #d4dcd7; font-size: 13px; line-height: 1.65; }
+.terminal-footer span { color: #929d96; font-size: 10px; line-height: 1.65; }
+.flow-label, .proof-kicker, .result-grid span { color: #929d96; }
+.code-section > * { min-width: 0; }
+.code-endpoint { display: flex; align-items: baseline; gap: 12px; padding: 18px 22px; border-bottom: 1px solid var(--line); }
+.code-endpoint > span { color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .06em; }
+.code-endpoint code { color: #cbd5cf; font: 11px/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere; min-width: 0; }
+.code-copy .integration-note { margin-top: 18px; font-size: 14px; color: var(--muted); }
+.code-pane code { overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+section[id] { scroll-margin-top: 96px; }
+.result-grid .verdict-text--contradicted { color: #ffc28b; }

@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=professional-20261018" />
+  <link rel="stylesheet" href="./styles.css?v=premium-20261023" />
 </head>
 <body>
   <div class="page-glow page-glow-a"></div>
@@ -145,18 +145,17 @@
             </div>
           </div>
 
-          <div class="terminal-footer"><span>paid live run · 18 October 2026 · model-assessed confidence</span><a href="/examples/">Inspect all three source-checked reports</a>
-            <span>evidence</span>
-            <span>sources</span>
-            <span>confidence</span>
-            <span>explanation</span>
+          <div class="terminal-footer">
+            <p class="result-takeaway">86% refers to new capacity additions, not electricity generated.</p>
+            <span>Operator-funded · 18 October 2026 · model-assessed confidence</span>
+            <a href="/examples/#energy-capacity-check">Inspect the original paid report ↗</a>
           </div>
         </div>
 
         <div class="floating-badge badge-a">
           <span class="badge-icon">✓</span>
           <div>
-            <strong>ClawHub skill audit</strong>
+            <strong>ClawHub skill scan</strong>
             <span>v1.1.1 · Pass</span>
           </div>
         </div>
@@ -190,7 +189,7 @@
           <strong>0.20 USDC</strong>
         </div>
         <div class="proof-item">
-          <span class="proof-kicker">Skill audit</span>
+          <span class="proof-kicker">Skill scan</span>
           <strong>v1.1.1 · Pass</strong>
         </div>
       </div>
@@ -214,7 +213,7 @@
           <h3>Capacity or generation?</h3>
           <p>
             The energy report rejected an 86% electricity-generation claim: the cited figure described new capacity additions.
-            <a class="text-link" href="/examples/energy-capacity-check.json">Read the stored paid report ↗</a>
+            <a class="text-link" href="/examples/#energy-capacity-check">Read the paid report ↗</a>
           </p>
         </article>
 
@@ -223,7 +222,7 @@
           <h3>Sales or the whole fleet?</h3>
           <p>
             The transport report checks the difference between annual electric-car sales and the vehicles already on the road.
-            <a class="text-link" href="/examples/ev-market-check.json">Read the stored paid report ↗</a>
+            <a class="text-link" href="/examples/#ev-market-check">Read the paid report ↗</a>
           </p>
         </article>
 
@@ -232,7 +231,7 @@
           <h3>Global or one income group?</h3>
           <p>
             The Internet-access report checks which population a percentage actually describes, with evidence linked to sources.
-            <a class="text-link" href="/examples/digital-access-check.json">Read the stored paid report ↗</a>
+            <a class="text-link" href="/examples/#digital-access-check">Read the paid report ↗</a>
           </p>
         </article>
       </div>
@@ -278,11 +277,13 @@
         <span class="section-kicker">Integrate</span>
         <h2>One request.<br />Built for software, not forms.</h2>
         <p>
-          Send a claim to <code>POST /v2/verify</code>. An unpaid request returns
-          HTTP 402 with payment requirements in the PAYMENT-REQUIRED header.
-          An authorized x402 v2 wallet client signs and retries the same JSON body.
-          Use POST /v2/verify for linked evidence; POST /verify keeps the original format.
-          Invalid requests include correction guidance before payment. GET/HEAD returns 405; use POST with JSON.
+          Send a claim as JSON. Receive an HTTP 402 payment challenge,
+          then let your authorized x402 v2 client sign and retry the same request.
+          A completed check returns a verdict, cited sources and linked evidence.
+        </p>
+        <p class="integration-note">
+          0.20 USDC per completed check. Existing integrations can continue
+          using <code>POST /verify</code> for the original response format.
         </p>
 
         <div class="link-stack">
@@ -304,6 +305,7 @@
       </div>
 
       <div class="code-card reveal reveal-delay">
+        <div class="code-endpoint"><span>POST</span><code>https://api.saververify.com/v2/verify</code></div>
         <div class="code-tabs">
           <button class="code-tab active" data-tab="request">Request</button>
           <button class="code-tab" data-tab="response">Response</button>
@@ -435,7 +437,7 @@
           <div class="audit-row">
             <span class="audit-mark">✓</span>
             <div>
-              <span class="audit-label">ClawHub skill audit</span>
+              <span class="audit-label">ClawHub skill scan</span>
               <strong>Pass</strong>
             </div>
             <span class="audit-version">v1.1.1</span>
