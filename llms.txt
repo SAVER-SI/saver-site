@@ -1,6 +1,6 @@
 # SAVER Verifier
 
-Factual checks before claims are used in agent research, reports or decisions.
+Fact-checking and claim verification for agent research and reports.
 Checks figures, dates and source attributions against web evidence when an error would change the output.
 Stored paid examples cover capacity versus generation, sales versus fleet, and global versus income-group figures.
 Not for transaction simulation, wallet risk or arithmetic.
