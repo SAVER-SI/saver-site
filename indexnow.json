@@ -1,0 +1,37 @@
+{
+  "host": "saververify.com",
+  "keyFile": "8b7b1acc953f5f201e038cb1c530a599.txt",
+  "entries": [
+    {
+      "files": [
+        "index.html"
+      ],
+      "url": "https://saververify.com/"
+    },
+    {
+      "files": [
+        "fact-checking-api/index.html",
+        "fact-checking-api/guide.css"
+      ],
+      "url": "https://saververify.com/fact-checking-api/"
+    },
+    {
+      "files": [
+        "fact-checking-api/agent-workflow.md"
+      ],
+      "url": "https://saververify.com/fact-checking-api/agent-workflow.md"
+    },
+    {
+      "files": [
+        "agent-tool.json"
+      ],
+      "url": "https://saververify.com/agent-tool.json"
+    },
+    {
+      "files": [
+        "llms.txt"
+      ],
+      "url": "https://saververify.com/llms.txt"
+    }
+  ]
+}

@@ -26,4 +26,8 @@ jobs:
           node-version: '24'
           package-manager-cache: false
       - run: node scripts/check-metadata.mjs
+      - run: node scripts/check-guide.mjs
+      - run: node --test scripts/indexnow.test.mjs
+      - run: node scripts/check-layout.mjs
+
 

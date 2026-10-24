@@ -43,3 +43,7 @@ Research-report checkpoint: https://github.com/SAVER-SI/saver-verifier/blob/main
 
 Directory import manifest: https://api.saververify.com/x402-manifest.json
 It contains x402Version, per-resource accepts, POST methods and Bazaar input/output schemas. The live 402 challenge supplies the current payment terms.
+
+
+Research report buyer guide: https://saververify.com/fact-checking-api/
+Machine-readable agent workflow: https://saververify.com/fact-checking-api/agent-workflow.md
