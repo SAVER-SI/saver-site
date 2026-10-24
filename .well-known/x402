@@ -17,7 +17,9 @@
       "network": "eip155:8453",
       "scheme": "exact",
       "responseVersion": "2.0",
-      "iconUrl": "https://saververify.com/icon.png"
+      "iconUrl": "https://saververify.com/icon.png",
+      "serviceName": "SAVER Verifier Fact Checking",
+      "name": "SAVER Verifier Fact Checking"
     },
     {
       "url": "https://api.saververify.com/verify",
@@ -28,7 +30,9 @@
       },
       "network": "eip155:8453",
       "scheme": "exact",
-      "iconUrl": "https://saververify.com/icon.png"
+      "iconUrl": "https://saververify.com/icon.png",
+      "serviceName": "SAVER Verifier Fact Checking",
+      "name": "SAVER Verifier Fact Checking"
     }
   ],
   "openapi": "https://api.saververify.com/openapi.json",
