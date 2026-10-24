@@ -3,7 +3,8 @@
   "canonicalBaseUrl": "https://api.saververify.com",
   "service": {
     "name": "SAVER Verifier",
-    "description": "Fact-checking and claim verification API for AI agents. Verify whether a cited source supports a claim; check statistics, dates, units and populations in research reports before publication. Separate web research returns a verdict, linked evidence and sources. Source verification is model-assessed, not guaranteed correct. POST /v2/verify; x402 v2 on Base; 0.20 USDC. No signup or API key."
+    "description": "Fact-checking and claim verification API for AI agents. Verify whether a cited source supports a claim; check statistics, dates, units and populations in research reports before publication. Separate web research returns a verdict, linked evidence and sources. Source verification is model-assessed, not guaranteed correct. POST /v2/verify; x402 v2 on Base; 0.20 USDC. No signup or API key.",
+    "iconUrl": "https://saververify.com/icon.png"
   },
   "resources": [
     {
@@ -15,7 +16,8 @@
       },
       "network": "eip155:8453",
       "scheme": "exact",
-      "responseVersion": "2.0"
+      "responseVersion": "2.0",
+      "iconUrl": "https://saververify.com/icon.png"
     },
     {
       "url": "https://api.saververify.com/verify",
@@ -25,7 +27,8 @@
         "currency": "USDC"
       },
       "network": "eip155:8453",
-      "scheme": "exact"
+      "scheme": "exact",
+      "iconUrl": "https://saververify.com/icon.png"
     }
   ],
   "openapi": "https://api.saververify.com/openapi.json",

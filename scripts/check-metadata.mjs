@@ -43,3 +43,14 @@ assert.equal(structured.description, description, 'structured description drift'
 assert.equal(structured.url, tool.transport.url);
 assert.equal(structured.mainEntityOfPage, 'https://saververify.com/');
 console.log('WebAPI structured data matches the canonical description and endpoint.');
+
+const iconUrl = 'https://saververify.com/icon.png';
+for (const resource of [...manifest.resources, ...discovery.resources]) assert.equal(resource.iconUrl, iconUrl);
+assert.equal(discovery.service.iconUrl, iconUrl);
+assert.equal(structured.logo, iconUrl);
+const icon = await readFile(new URL('icon.png', root));
+assert.equal(icon.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+assert.equal(icon.readUInt32BE(16), 512);
+assert.equal(icon.readUInt32BE(20), 512);
+assert.ok(html.includes('property="og:image" content="' + iconUrl + '"'));
+console.log('Raster catalog icon and social preview point to the same valid 512px PNG.');
