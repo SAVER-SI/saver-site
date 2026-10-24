@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {buildPayload,notify} from './notify-indexnow.mjs';
+import {buildPayload,notify,waitForPublication} from './notify-indexnow.mjs';
 const key='a'.repeat(32),config={host:'saververify.com',keyFile:key+'.txt',entries:[{files:['index.html'],url:'https://saververify.com/'},{files:['guide/index.html','guide/style.css'],url:'https://saververify.com/guide/'}]};
 test('notification is limited to the owned host and changed public documents',()=>{
  assert.equal(buildPayload(config,key,['README.md']).urlList.length,0);
@@ -20,4 +20,9 @@ test('successful ownership permits exactly one POST and does not claim indexing'
 });
 test('no changed public URLs produces no network traffic',async()=>{
  const result=await notify(buildPayload(config,key,[]),()=>{throw Error('Unexpected network');});assert.equal(result.submitted,0);
+});
+test('notification waits for the actual changed document rather than merely a live site',async()=>{
+ const checks=[{url:'https://saververify.com/guide/',content:'new guide'}];
+ await assert.rejects(()=>waitForPublication(checks,async()=>new Response('old guide'),1));
+ await waitForPublication(checks,async()=>new Response('new guide\n'),1);
 });

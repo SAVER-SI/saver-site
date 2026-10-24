@@ -19,6 +19,17 @@ export async function notify(payload, fetchImpl = fetch) {
   return {state:response.status===200?'received':'received_pending_key_verification',httpStatus:response.status,submitted:payload.urlList.length,urls:payload.urlList,indexingGuaranteed:false};
 }
 
+export async function waitForPublication(checks, fetchImpl = fetch, attempts = 6) {
+  for(let i=0;i<attempts;i++) {
+    const matches=await Promise.all(checks.map(async ({url,content})=>{
+      try {const r=await fetchImpl(url,{redirect:'error',signal:AbortSignal.timeout(10000)});return r.status===200&&(await r.text()).trimEnd()===content.trimEnd();}catch{return false;}
+    }));
+    if(matches.every(Boolean))return;
+    if(i+1<attempts)await new Promise(resolve=>setTimeout(resolve,5000));
+  }
+  throw Error('Changed documents are not published yet; nothing submitted.');
+}
+
 async function main(args) {
   const root=new URL('../',import.meta.url);
   const config=JSON.parse(await readFile(new URL('indexnow.json',root),'utf8'));
@@ -26,6 +37,13 @@ async function main(args) {
   const changed=args.includes('--changed-only')?execFileSync('git',['diff','--name-only','HEAD^','HEAD'],{encoding:'utf8'}).trim().split('\n'):null;
   const payload=buildPayload(config,key,changed);
   if(!args.includes('--execute')) {console.log(JSON.stringify({state:'dry_run',submitted:0,urls:payload.urlList}));return;}
+  if(args.includes('--wait-published')&&payload.urlList.length) {
+    const checks=[];
+    for(const entry of config.entries.filter(x=>payload.urlList.includes(x.url)))for(const file of entry.files.filter(x=>changed===null||changed.includes(x))) {
+      checks.push({url:file.endsWith('index.html')?entry.url:'https://saververify.com/'+file,content:await readFile(new URL(file,root),'utf8')});
+    }
+    await waitForPublication(checks);
+  }
   const result=await notify(payload);
   console.log(JSON.stringify(result));
   if(process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SUMMARY,`IndexNow: ${result.state}; ${result.submitted} URLs submitted. This is not proof of indexing or ranking.\n`);

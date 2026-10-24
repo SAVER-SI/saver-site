@@ -1,7 +1,7 @@
 name: Notify search engines after publication
 on:
   workflow_run:
-    workflows: ['pages build and deployment']
+    workflows: ['Static metadata checks']
     types: [completed]
   workflow_dispatch:
 permissions:
@@ -26,4 +26,4 @@ jobs:
           package-manager-cache: false
       - name: Notify IndexNow of changed published URLs
         continue-on-error: true
-        run: node scripts/notify-indexnow.mjs --execute --changed-only
+        run: node scripts/notify-indexnow.mjs --execute --changed-only --wait-published
