@@ -45,3 +45,7 @@ After successful main-branch metadata checks, the IndexNow workflow waits until 
 Checks: `node scripts/check-metadata.mjs`, `node scripts/check-guide.mjs`, `node --test scripts/indexnow.test.mjs`. GitHub CI also renders desktop/mobile layouts with the standard runner's preinstalled ChromeDriver, checks viewport width and overflow, and emits preview images in the job log. It adds no npm dependencies or artifact storage.
 
 Catalogue display label: **SAVER Verifier Fact Checking**. Canonical routes, response versions and payment terms are documented in the manifest.
+
+## Claude Code installation link
+
+The homepage Integrate section links to the public Claude Code plugin guide. Keep the link and wallet/spending requirements visible together. Installation does not authorize charges; this is a SAVER-managed marketplace, not an Anthropic directory listing. No new runtime, payment or model call is introduced by this static link.
