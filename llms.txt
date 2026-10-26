@@ -16,7 +16,7 @@ Content-Type: application/json
 
 Send claim and optional context directly as JSON, without a body wrapper or transport fields.
 claim must be a non-empty string <=8000 UTF-16 code units; context <=12000. The JSON body limit is 128 KiB.
-POST /verify remains available with the original string-evidence response format.
+POST /verify remains available with the original string-evidence response format. Both endpoints use the same source-checked verification engine; only the response format differs. Use /v2/verify when you need explicit evidence-to-source links.
 
 Price: 0.20 USDC. Base Mainnet (eip155:8453). x402 v2 exact.
 On 402, decode PAYMENT-REQUIRED (base64 JSON); the body may be {}.
