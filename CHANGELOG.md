@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-11-17 — privacy-respecting website analytics
+
+- Add Microsoft Clarity browser analytics with analytics and ad storage denied by default.
+- Disclose limited, cookieless measurement in the privacy notice; this does not track direct API calls.
+
+
 ## 2026-10-23 — search engine service metadata
 
 - Add factual WebAPI structured data, a descriptive page title and the actual homepage modification date in the sitemap.
