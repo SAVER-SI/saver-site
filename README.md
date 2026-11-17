@@ -49,3 +49,7 @@ Catalogue display label: **SAVER Verifier Fact Checking**. Canonical routes, res
 ## Claude Code installation link
 
 The homepage Integrate section links to the public Claude Code plugin guide. Keep the link and wallet/spending requirements visible together. Installation does not authorize charges; this is a SAVER-managed marketplace, not an Anthropic directory listing. No new runtime, payment or model call is introduced by this static link.
+
+## Website analytics
+
+The public HTML pages load Microsoft Clarity project `zf3gwm6dui` with analytics and ad storage explicitly denied. This is limited browser-side measurement and does not measure direct agent-to-API traffic; use hosting logs for API activity. Keep the privacy notice synchronized with any analytics changes.
