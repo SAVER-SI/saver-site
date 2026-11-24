@@ -1,6 +1,6 @@
 # SAVER: verify a material claim in an agent research report
 
-Purpose: a separately cited second check of one externally sourced factual claim. Use when a metric, denominator, reporting period, population or source attribution remains important to the report. This guide does not authorize payment.
+Use this fact-checking API for claim verification before publishing a research report. Use when a metric, denominator, reporting period, population or source attribution remains important to the report. This guide does not authorize payment.
 
 ## Decide whether another check is useful
 

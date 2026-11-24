@@ -1,6 +1,6 @@
 # SAVER Verifier website
 
-Static GitHub Pages website at https://saververify.com. Verify factual claims and check whether cited sources support them. Fact-check statistics, dates and source attributions in agent research and reports.
+Static GitHub Pages website at https://saververify.com. Fact-checking API for research reports and factual claim verification. Before publishing, verify a factual claim against its cited source. Send the claim and optionally a source URL as context. Get a model-assessed verdict, linked evidence, and sources for 0.20 USDC per completed check.
 
 ## Repository boundaries
 
@@ -8,7 +8,7 @@ Static GitHub Pages website at https://saververify.com. Verify factual claims an
 - [SAVER-SI/saver-verifier](https://github.com/SAVER-SI/saver-verifier) contains public API documentation, client examples and the skill.
 - The private `SAVER-SI/agent` repository contains production server and business logic. Do not copy private implementation, environment files or credentials here.
 
-Paid requests go to `POST https://api.saververify.com/v2/verify`; the original `/verify` format remains supported. Price is 0.20 USDC through x402 v2 on Base. API contract 1.2.2 and skill 1.1.1 are separate versions.
+Paid requests go to `POST https://api.saververify.com/v2/verify`; the original `/verify` format remains supported. Price is 0.20 USDC through x402 v2 on Base. API contract 1.2.2 and skill source 1.1.2 are separate versions.
 
 ## Presentation and machine contracts
 
